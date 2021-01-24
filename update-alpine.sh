@@ -17,4 +17,9 @@ git add VERSION
 git add size
 
 git commit -m "[$now] Database Update"
-git push
+
+./push.sh
+if (( $? != 0 )); then
+	echo "[ERROR] failed to push changes. make sure to set LFS_USER and LFS_PASS env vars and that expect is installed."
+	exit 1
+fi
