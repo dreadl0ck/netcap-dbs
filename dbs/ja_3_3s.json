@@ -1,0 +1,108 @@
+[
+  {
+     "server": "Apache/2.4.29 (Ubuntu 18.04)",
+     "clients": [
+       {
+          "os": "Windows 10 Education x64",
+          "arch": "x64",
+          "processes": [
+             {
+                "process": "Mozilla Firefox 75.0 x86",
+                "JA3": "714cdf6e462870e2b85d251a3b22064b",
+                "JA3S": "f4febc55ea12b31ae17cfb7e614afda8"
+             },
+             {
+                "process": "Google Chrome 81.0.4044.129 x64",
+                "JA3": "ebf950a16f650142d0bbf8b663dfeb4a",
+                "JA3S": "f4febc55ea12b31ae17cfb7e614afda8"
+             },
+             {
+                "process": "Microsoft Edge 44.18362.387.0",
+                "JA3": "be6155e945a3e59a1dd0841b86f6c945",
+                "JA3S": "895252f3ce80cebf7a8837be83ec8e16"
+             }            
+          ] 
+       },
+       {
+         "os": "Ubuntu 18.04.2, Linux 5.3.0",
+         "arch": "x64",
+         "processes": [
+           {
+             "process": "Mozilla Firefox 75.0 x64",
+             "JA3": "714cdf6e462870e2b85d251a3b22064b",
+             "JA3S": "f4febc55ea12b31ae17cfb7e614afda8"
+           },
+           {
+             "process": "Chromium Version 80.0.3987.163 x64",
+             "JA3": "c1cf6091f9984f1603102646099dd48b",
+             "JA3S": "fcb2d4d0991292272fcb1e464eedfd43"
+           },
+           {
+             "process": "Chromium Version 80.0.3987.163 x64 (with pre-shared-key)",
+             "JA3": "ebf950a16f650142d0bbf8b663dfeb4a",
+             "JA3S": "f4febc55ea12b31ae17cfb7e614afda8"
+           }
+         ]
+       }
+     ]
+  },
+  {
+     "server": "nginx/1.14.0 (Ubuntu 18.04)",
+     "clients": [
+       {
+          "os": "Windows 10 Education x64",
+          "arch": "x64",
+          "processes": [
+             {
+                "process": "Mozilla Firefox 75.0 x86",
+                "JA3": "714cdf6e462870e2b85d251a3b22064b",
+                "JA3S": "4ef1b297bb817d8212165a86308bac5f"
+             },
+             {
+                "process": "Google Chrome 81.0.4044.129 x64",
+                "JA3": "ebf950a16f650142d0bbf8b663dfeb4a",
+                "JA3S": "4ef1b297bb817d8212165a86308bac5f"
+             },
+             {
+                "process": "Microsoft Edge 44.18362.387.0",
+                "JA3": "b592adaa596bb72a5c1ccdbecae52e3f",
+                "JA3S": "895252f3ce80cebf7a8837be83ec8e16"
+             }            
+          ] 
+       },
+       {
+         "os": "Ubuntu 18.04.2, Linux 5.3.0",
+         "arch": "x64",
+         "processes": [
+           {
+             "process": "Mozilla Firefox 75.0 x64",
+             "JA3": "714cdf6e462870e2b85d251a3b22064b",
+             "JA3S": "4ef1b297bb817d8212165a86308bac5f"
+           },
+           {
+             "process": "Chromium Version 80.0.3987.163 x64",
+             "JA3": "ebf950a16f650142d0bbf8b663dfeb4a",
+             "JA3S": "4ef1b297bb817d8212165a86308bac5f"
+           }
+         ]
+       }
+     ]
+  },
+  {
+     "server": "nginx/1.14.0 (Ubuntu 18.04.01)",
+     "clients": [
+       {
+          "os": "Windows 10 Education x64",
+          "arch": "x64",
+          "processes": [
+             {
+                "process": "Microsoft Edge 44.18362.387.0",
+                "JA3": "be6155e945a3e59a1dd0841b86f6c945",
+                "JA3S": "6aea764ee67f71caf3dc723118906199"
+             }            
+          ] 
+       }
+     ]
+  }
+]
+

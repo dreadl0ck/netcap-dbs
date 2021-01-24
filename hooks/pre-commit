@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# A hook script to verify that only the expected maxmind geolite db versions are checked into version control.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# Redirect output to stderr.
+exec 1>&2
+
+# prevent commiting any other maxmind db version then the latest one that was released under the creative commons license
+# 479218cd19f52f9826bc836646a4bec1b04022e3fc42015d2aa577cdf2017f1a  dist/geolite/GeoLite2-ASN_20191224/GeoLite2-ASN.mmdb
+# a253d9cd68fe17b00087da24375f31f07cd4bb3852dc5fe3afe37b8f59e5abd0  dist/geolite/GeoLite2-City_20191224/GeoLite2-City.mmdb
+if [[ $(sha256sum dbs/GeoLite2-ASN.mmdb | cut -d ' ' -f 1) != "479218cd19f52f9826bc836646a4bec1b04022e3fc42015d2aa577cdf2017f1a" ]] ||
+	[[ $(sha256sum dbs/GeoLite2-City.mmdb | cut -d ' ' -f 1) != "a253d9cd68fe17b00087da24375f31f07cd4bb3852dc5fe3afe37b8f59e5abd0" ]]
+then
+
+	echo "swapping geolite version with CC licensed one"
+	
+	./download-geolite.sh
+	mkdir -p /tmp/geolite-latest
+	
+	# backup latest dbs in repo
+	cp dbs/GeoLite2-ASN.mmdb /tmp/geolite-latest
+	cp dbs/GeoLite2-City.mmdb /tmp/geolite-latest
+	
+	# replace with CC licensed version
+	cp /tmp/GeoLite2-City_20191224/GeoLite2-City.mmdb dbs/
+	cp /tmp/GeoLite2-ASN_20191224/GeoLite2-ASN.mmdb dbs/
+
+	git add .
+
+	echo "md5 hashes of geolite db files included in commit:"
+	md5sum dbs/*.mmdb
+	
+	exit 0
+fi
