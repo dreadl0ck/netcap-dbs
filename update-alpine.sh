@@ -1,5 +1,7 @@
 #!/bin/ash -e
 
+cd /usr/local/etc/netcap || exit 1
+
 ## dependencies: apt install tree zip git git-fs
 ## on first use init lfs hooks with $ git lfs install
 net util -generate-dbs
