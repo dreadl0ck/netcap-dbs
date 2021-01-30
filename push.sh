@@ -12,4 +12,5 @@ expect "Password for 'https://$env(LFS_USER)@lfs.dreadl0ck.net': "
 
 send -- "$env(LFS_PASS)\n"
 
-interact
+expect eof
+exit
