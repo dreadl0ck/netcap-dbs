@@ -3769,8 +3769,8 @@ imsldoc,2035,tcp,,,,,,,,,
 imsldoc,2035,udp,,,,,,,,,
 e-dpnet,2036,tcp,Ethernet WS DP network,[Peter_Kaever],[Peter_Kaever],2005-08,,,,,
 e-dpnet,2036,udp,Ethernet WS DP network,[Peter_Kaever],[Peter_Kaever],2005-08,,,,,
-applus,2037,tcp,APplus Application Server,[Thomas_Boerkel],[Thomas_Boerkel],2008-06-06,,,,,Formerly was P2plus Application Server
-applus,2037,udp,APplus Application Server,[Thomas_Boerkel],[Thomas_Boerkel],2008-06-06,,,,,Formerly was P2plus Application Server
+applus,2037,tcp,APplus Application Server,[Alfred_Weindl],[Marcus_Schairer],2008-06-06,2021-07-20,,,Unauthorized Use Known on port 2037,Formerly was P2plus Application Server
+applus,2037,udp,APplus Application Server,[Alfred_Weindl],[Marcus_Schairer],2008-06-06,2021-07-20,,,Unauthorized Use Known on port 2037,Formerly was P2plus Application Server
 objectmanager,2038,tcp,,,,,,,,,
 objectmanager,2038,udp,,,,,,,,,
 prizma,2039,tcp,Prizma Monitoring Service,[Dotan_Ofek],[Dotan_Ofek],2005-12,,,,,
@@ -10591,8 +10591,8 @@ radg,6789,tcp,GSS-API for the Oracle Remote Administration Daemon,[Oracle_9],[Sh
 ,6789,udp,Reserved,,,2002-08,2016-09-15,,,,
 hnmp,6790,tcp,HNMP,[Jude_George],[Jude_George],,,,,,
 hnmp,6790,udp,HNMP,[Jude_George],[Jude_George],,,,,,
-hnm,6791,tcp,Halcyon Network Manager,[Richard_Harriss],[Richard_Harriss],2005-05,,,,,
-hnm,6791,udp,Halcyon Network Manager,[Richard_Harriss],[Richard_Harriss],2005-05,,,,,
+hnm,6791,tcp,Halcyon Network Manager,[HelpSystems],[Henriët_Wilkinson],2005-05,2021-07-20,,,,
+hnm,6791,udp,Halcyon Network Manager,[HelpSystems],[Henriët_Wilkinson],2005-05,2021-07-20,,,,
 ,6792-6800,,Unassigned,,,,,,,,
 acnet,6801,tcp,ACNET Control System Protocol,[Fermilab],[Rich_Neswold],2007-02,2017-07-13,,,,
 acnet,6801,udp,ACNET Control System Protocol,[Fermilab],[Rich_Neswold],2007-02,2017-07-13,,,,
