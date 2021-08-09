@@ -8041,7 +8041,7 @@ ezmessagesrv,4085,tcp,EZNews Newsroom Message Service,[Gerald_R_Jensen],[Gerald_
 ,4085,udp,Reserved,,,,,,,,
 ,4086,tcp,Reserved,,,,,,,,
 ftsync,4086,udp,Firewall/NAT state table synchronization,[Heiner_Erne],[Heiner_Erne],2008-06-06,,,,,
-applusservice,4087,tcp,APplus Service,[Thomas_Boerkel],[Thomas_Boerkel],2008-06-05,,,,,
+applusservice,4087,tcp,APplus Service,[Alfred_Weindl],[Marcus_Schairer],2008-06-05,2021-08-09,,,,
 ,4087,udp,Reserved,,,,,,,,
 npsp,4088,tcp,Noah Printing Service Protocol,[Hiromi_Ohara],[Hiromi_Ohara],2008-06-18,,,,,
 ,4088,udp,Reserved,,,,,,,,
