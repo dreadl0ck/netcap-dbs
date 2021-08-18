@@ -14538,6 +14538,7 @@ photoshow,,tcp,Show Photos over TCP,[Hamed_Ishbaitah],[Hamed_Ishbaitah],2014-07-
 photosmithsync,,tcp,Photosmith's iPad to Lightroom sync protocol,[Photosmith],[Chris_Horne],2011-10-27,,,,,Defined TXT keys: None
 pictua,,,Pictua Intercommunication Protocol,[Isaack_Rasmussen],[Isaack_Rasmussen],,,,,,Defined TXT keys: None
 piesync,,,pieSync Computer to Computer Synchronization,[Timothy_Wayper],[Timothy_Wayper],,,,,,Defined TXT keys: None
+pipedal,,tcp,Pi Pedal Web Interface,[Robin_Davies],[Robin_Davies],2021-08-18,,,,,Defined TXT keys: None
 piu,,,Pedestal Interface Unit by RPM-PSI,[James_Nikolai],[James_Nikolai],,,,,,Defined TXT keys: None
 pkixrep,,,Public Key Infrastructure Repository Locator Service,,,,,[RFC4386],,,
 poch,,,Parallel OperatiOn and Control Heuristic (Pooch),[Dean_Dauger],[Dean_Dauger],,,,,,Defined TXT keys: None
